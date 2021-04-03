@@ -1,0 +1,26 @@
+{
+    "name": "thiagocavalcante/notification",
+    "description": "This is a library that uses composer as the basis for generating email notifications",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thiago Cavalcante",
+            "email": "thiago@mazaltec.com.br",
+            "homepage" : "https://mazaltec.com.br",
+            "role": "developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "phpmailer/phpmailer": "6.0.1"
+    },
+    "config": {
+        "vendor-dir": "lib_ext"
+    },
+    "autoload": {
+        "psr-4": {
+            "Notification\\": "_app"
+        }
+    }
+}
